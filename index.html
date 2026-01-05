@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SkillSpace | Elevate Your Tech Game</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Space Grotesk', 'sans-serif'],
+            },
+          },
+        },
+      }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Space Grotesk', sans-serif;
+        margin: 0;
+        background-color: #F5F1E6;
+        font-weight: 500;
+        transition: background-color 0.5s ease, color 0.5s ease;
+      }
+      
+      html.dark body {
+        background-color: #020617; /* slate-950 */
+        color: #f8fafc; /* slate-50 */
+      }
+
+      code, pre, .font-mono, [class*="tracking-widest"] {
+        font-family: 'Space Grotesk', sans-serif !important;
+      }
+
+      .font-bold-display {
+        font-weight: 900;
+        letter-spacing: -0.04em;
+      }
+
+      i, em, .italic {
+        font-style: normal !important;
+      }
+
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #d4cfc0;
+        border-radius: 4px;
+      }
+      .dark ::-webkit-scrollbar-thumb {
+        background: #334155;
+      }
+
+      /* Transitions - Scoped to avoid layout thrashing */
+      .theme-transition {
+        transition: background-color 0.5s cubic-bezier(0.4, 0, 0.2, 1), 
+                    border-color 0.5s cubic-bezier(0.4, 0, 0.2, 1), 
+                    color 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+
+      .prose-custom h1, .prose-custom h2, .prose-custom h3 {
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: -0.02em;
+      }
+      
+      .prose-custom p {
+        font-weight: 500;
+      }
+
+      /* Utility for smooth image rendering */
+      img {
+        font-display: swap;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "@google/genai": "https://esm.sh/@google/genai@^1.34.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react-markdown": "https://esm.sh/react-markdown@^9.0.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

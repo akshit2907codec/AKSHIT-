@@ -1,0 +1,8 @@
+{
+  "name": "SkillSpace",
+  "description": "A high-performance technical skill enhancement platform featuring AI-powered mentorship, coding tracks (C++, Python, Java, JS), and a competitive Guild system designed for maximum engagement.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
